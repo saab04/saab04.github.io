@@ -16,7 +16,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 9.5rem auto auto;
+    grid-template-rows: 9rem auto auto;
     grid-template-areas:
     "header header header header header"
     "main main main main main"
@@ -58,12 +58,12 @@ header > nav > ul{
     align-items: center;
 }
 
+
 header > nav > ul > li{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 header > nav > ul > li > a{
     text-align: center;
