@@ -46,7 +46,7 @@ header > nav{
 }
 
 header > nav h1{
-    margin: 0 4rem;
+    margin: 0 3rem;
     font-size: 3.5rem;
     color: var(--color);
     font-family: 'Quintessential', cursive;
@@ -94,7 +94,7 @@ header > nav > ul > li > a:hover{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 50rem;
+    height: 60rem;
     background: var(--main-color) url(./bilder/hotel-g2516a8452_640.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -116,6 +116,28 @@ header > nav > ul > li > a:hover{
     color: var(--white);
     font-family: 'Quintessential', cursive;;
 }
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--dark-main-color);
+}
+
+.card1,.card2,.card3,.card4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35rem;
+    height: 35rem;
+    margin: 1rem;
+    background: grey;
+
+}
+
+
+
 
 
 
