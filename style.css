@@ -64,7 +64,7 @@ header > nav > ul > li{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    height: 100%;
     max-width: 15rem;
     flex: 1 1 auto;
     
@@ -80,11 +80,10 @@ header > nav > ul > li > a{
     text-decoration: none;
     color: var(--white);
     font-family: 'Roboto', sans-serif;
-    border-radius: 3rem;
 }
 
 header > nav > ul > li > a:hover{
-    transition: 0.5s;
+    transition: all 0.5s ease;
     background: var(--main-color);
 }
 
@@ -121,7 +120,6 @@ header > nav > ul > li > a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: var(--dark-main-color);
 }
 
 .card1,.card2,.card3,.card4{
