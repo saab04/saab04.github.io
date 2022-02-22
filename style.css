@@ -16,7 +16,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 9rem auto auto;
+    grid-template-rows: 7.5rem auto auto;
     grid-template-areas:
     "header header header header header"
     "main main main main main"
@@ -84,7 +84,7 @@ header > nav > ul > li > a{
 
 header > nav > ul > li > a:hover{
     transition: all 0.5s ease;
-    background: var(--dark-main-color);
+    background: var(--color)
 }
 
 .main-img{
@@ -120,6 +120,7 @@ header > nav > ul > li > a:hover{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .cards h1{
@@ -128,18 +129,22 @@ header > nav > ul > li > a:hover{
 }
 
 .cards h2{
-    font-size: 2rem;
+    line-height: 1.68em;
+    font-size: 1.125em;
+    max-width: 90%;
+    margin: 0 auto;
+   
 }
 
 .card1,.card2,.card3,.card4{
     position: relative;
+    flex: 1 1 24%;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    width: 35rem;
+    text-align: center; 
     height: 35rem;
-    margin: 1rem;
+    margin: .5rem;
     background: grey;
     color: var(--white);
     background: var(--dark-main-color);
@@ -165,10 +170,12 @@ header > nav > ul > li > a:hover{
 
 .card-btn{
     position: absolute;
-    bottom: 2rem;
-    height: 6rem;
-    width: 20rem;
-    background: var(--color)
+    bottom: 3rem;
+    height: 5rem;
+    width: 18rem;
+    background: var(--main-color);
+    border-radius: 1.5rem;
+
 }
 
 .card-btn > a{
@@ -180,9 +187,18 @@ header > nav > ul > li > a:hover{
     text-decoration: none;
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;;
+    color: var(--white);
+    border-radius: 1.5rem;
+}
+
+.card-btn > a:hover{
+    transition: all 0.3s ease;
+    background: var(--white);
     color: var(--main-color);
     
 }
+
+
 
 
 
