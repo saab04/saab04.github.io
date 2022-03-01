@@ -46,8 +46,8 @@ header > nav{
 }
 
 header > nav h1{
-    margin: 0 3rem;
-    font-size: 3.5rem;
+    margin: 0 6rem;
+    font-size: 4rem;
     color: var(--color);
     font-family: 'Quintessential', cursive;
 }
@@ -65,7 +65,6 @@ header > nav > ul > li{
     justify-content: center;
     align-items: center;
     height: 100%;
-    max-width: 15rem;
     flex: 1 1 auto;
     
 }
@@ -99,8 +98,6 @@ header > nav > ul > li > a:hover{
     background-position: center;
     background-blend-mode: darken;
     text-align: center;
-
-
 }
 
 .main-img > h1{
@@ -121,6 +118,7 @@ header > nav > ul > li > a:hover{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0.5rem;
 }
 
 .cards h1{
@@ -144,7 +142,7 @@ header > nav > ul > li > a:hover{
     align-items: center;
     text-align: center; 
     height: 35rem;
-    margin: .5rem;
+    margin: 0.5rem;
     background: grey;
     color: var(--white);
     background: var(--dark-main-color);
@@ -202,9 +200,9 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 60rem;
+    height: 55rem;
     width: 100%;
-    background: var(--secondary-color); 
+    background: var(--secondary-color);
 }
 
 .logo{
@@ -212,11 +210,11 @@ footer {
     width: 30rem;
     text-align: center;
     color: var(--color);
+    margin-top: 4rem;
     
 }
 
 .logo > h1{
-    margin: 2rem;
     font-size: 4rem;
     font-family: 'Quintessential', cursive;;
 }
@@ -237,9 +235,22 @@ footer {
     text-align: center;
 }
 
+.info div > p > i{
+    margin-right: 1.2rem;
+}
+
+.info div > p > a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.info div > p > a:hover{
+    text-decoration: underline;
+}
+
 .social-media ul{
     position: relative;
-    font-size: 22px;
+    font-size: 3rem;
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -253,10 +264,10 @@ footer {
 .social-media ul li {
     position: relative; 
     display: inline-block;
-    height: 60px;
-    width: 60px;
+    height: 8rem;
+    width: 8rem;
     margin: 1rem;
-    line-height: 60px;
+    line-height: 8rem;
     border-radius: 50%;
     color: #fff;
     background-color: var(--dark-main-color);
@@ -269,9 +280,9 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
     border-radius: 50%;
     opacity: 0;
     box-shadow: 0 0 0 1px #fff;
