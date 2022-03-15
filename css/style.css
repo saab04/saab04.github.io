@@ -358,6 +358,27 @@ footer {
     color: var(--secondary-color)
 }
 
+/* boka */
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+
+}
+
+form{
+    display: flex;
+    height: 40rem;
+    width: 80rem;
+    background: var(--main-color);
+}
+
+.check{
+    flex-basis: 100%;
+}
+
 
 
 
