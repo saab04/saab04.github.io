@@ -374,21 +374,25 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40rem;
+    height: 35rem;
     width: 80rem;
     background: var(--main-color);
+    font-family: 'Roboto', sans-serif;;
 }
 
 form h1{
     position: absolute;
     top: 2rem;
+    font-size: 4rem;
+    color: var(--dark-main-color);
+    
 }
 
 .check{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 
 }
 
@@ -397,12 +401,22 @@ form h1{
     justify-content: center;
     align-items: center;
     flex: 1 1 50%;
+    position: relative;
 }
 
-.check > div input{
+form div > label{
+    position: absolute;
+    z-index: 2;
+    bottom: 100%;
+    left: 10%;
+    
+}
+
+form > div > div > input{
     position: relative;
     width: 80%;
     height: 4rem;
+    color: rgb(150, 148, 148);
 }
 
 
@@ -417,12 +431,25 @@ form h1{
     justify-content: center;
     align-items: center;
     flex: 1 1 25%;
+    position: relative;
 }
 
-.check-info > div input{
-    position: relative;
+
+.check-info > div > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80%;
-    height: 4rem;
+    height: 100%;
+    background: var(--dark-main-color);
+    text-decoration: none;
+    color:var(--white);
+    border-radius: 2rem;
+}
+
+.check-info > div > a:hover{
+    background: white;
+    color: var(--dark-main-color);
 }
 
 
