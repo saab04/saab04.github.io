@@ -34,36 +34,40 @@
                 <h1>Gör din bokning här</h1>
                 <div class="check">
                     <div>
-                        <label for="check-in">fgbfgbfg</label>
+                        <label for="check-in">Check In</label>
                         <input type="date" name="check-in" id="check-in">
                     </div>
                     <div>
-                        <label for="check-out">fgbfgbfg</label>
+                        <label for="check-out">Check Ut</label>
                         <input type="date" name="check-out" id="check-out">
                     </div>
                 </div>
                 <div class="check-info">
-                    <div>
-                        <label for="rooms">fgbfgbfg</label>
+                    <div class="number-input">
+                        <label for="rooms">Antal rum</label>
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
                         <input type="number" list="number-list" name="rooms" id="rooms">
-                        <datalist id="number-list">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                        <!--<datalist id="number-list">
                             <option value="1">
                             <option value="2">
                             <option value="3">
-                        </datalist>
+                        </datalist>!-->
                     </div>
                     <div>
-                        <label for="room-type">fgbfgbfg</label>
-                        <input type="number" list="room-list" name="room-type" id="room-type">
+                        <label for="room-type">Typ av rum</label>
+                        <input type="text" list="room-list" name="room-type" id="room-type">
                         <datalist id="room-list">
                             <option value="asd">
                             <option value="2asdasd">
                             <option value="3asdasd">
                         </datalist>
                     </div>
-                    <div>
-                        <label for="persons">fgbfgbfg</label>
+                    <div class="number-input">
+                        <label for="persons">Antal gäster</label>
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
                         <input type="number" list="number-list" name="persons" id="persons">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
                     </div>
                     <div>
                         <a href="#">Boka</a>
