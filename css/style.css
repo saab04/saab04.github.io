@@ -441,7 +441,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .number-input {
-    border: 2px solid #ddd;
+    max-width: 12rem;
+    background-color: rgba(0, 0, 0, 0.3);
     display: inline-flex;
 }
   
@@ -469,7 +470,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900;
-    content: '\f077';
+    content: '';
     transform: translate(-50%, -50%) rotate(180deg);
 }
 
@@ -478,7 +479,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
   
 .number-input input[type=number] {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;;
     max-width: 5rem;
     padding: .5rem;
     border: solid #ddd;

@@ -30,7 +30,7 @@
             </nav>
         </header>
         <main class="main">
-            <form>
+            <form method="POST">
                 <h1>Gör din bokning här</h1>
                 <div class="check">
                     <div>
@@ -45,9 +45,9 @@
                 <div class="check-info">
                     <div class="number-input">
                         <label for="rooms">Antal rum</label>
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input type="number" list="number-list" name="rooms" id="rooms">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                        <button type="button" onclick="document.getElementById('rooms').stepDown()" class="minus"><i class="fas fa-minus"></i></button>
+                        <input type="number" list="number-list" name="rooms" id="rooms" min="1" value="1">
+                        <button type="button" onclick="document.getElementById('rooms').stepUp();" class="plus"><i class="fas fa-plus"></i></button>
                         <!--<datalist id="number-list">
                             <option value="1">
                             <option value="2">
@@ -56,7 +56,7 @@
                     </div>
                     <div>
                         <label for="room-type">Typ av rum</label>
-                        <input type="text" list="room-list" name="room-type" id="room-type">
+                        <input type="text" list="room-list" name="room-type" id="room-type" value="Standard">
                         <datalist id="room-list">
                             <option value="asd">
                             <option value="2asdasd">
@@ -65,9 +65,9 @@
                     </div>
                     <div class="number-input">
                         <label for="persons">Antal gäster</label>
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
-                        <input type="number" list="number-list" name="persons" id="persons">
-                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                        <button type="button" onclick="document.getElementById('persons').stepDown()" class="minus"><i class="fas fa-minus"></i></button>
+                        <input type="number" list="number-list" name="persons" id="persons" min="1" value="1">
+                        <button type="button" onclick="document.getElementById('persons').stepUp()" class="plus"><i class="fas fa-plus"></i></button>
                     </div>
                     <div>
                         <a href="#">Boka</a>
