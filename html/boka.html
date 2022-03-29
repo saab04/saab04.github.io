@@ -45,14 +45,10 @@
                 <div class="check-info">
                     <div class="number-input">
                         <label for="rooms">Antal rum</label>
-                        <button type="button" onclick="document.getElementById('rooms').stepDown()" class="minus"><i class="fas fa-minus"></i></button>
+                        <button type="button" onclick="document.getElementById('rooms').stepDown()" class="minus"><i class="fas fa-chevron-down"></i></button>
                         <input type="number" list="number-list" name="rooms" id="rooms" min="1" value="1">
-                        <button type="button" onclick="document.getElementById('rooms').stepUp();" class="plus"><i class="fas fa-plus"></i></button>
-                        <!--<datalist id="number-list">
-                            <option value="1">
-                            <option value="2">
-                            <option value="3">
-                        </datalist>!-->
+                        <button type="button" onclick="document.getElementById('rooms').stepUp();" class="plus"><i class="fas fa-chevron-up"></i></button>
+
                     </div>
                     <div>
                         <label for="room-type">Typ av rum</label>
@@ -65,9 +61,9 @@
                     </div>
                     <div class="number-input">
                         <label for="persons">Antal gäster</label>
-                        <button type="button" onclick="document.getElementById('persons').stepDown()" class="minus"><i class="fas fa-minus"></i></button>
+                        <button type="button" onclick="document.getElementById('persons').stepDown()" class="minus"><i class="fas fa-chevron-down"></i></button>
                         <input type="number" list="number-list" name="persons" id="persons" min="1" value="1">
-                        <button type="button" onclick="document.getElementById('persons').stepUp()" class="plus"><i class="fas fa-plus"></i></button>
+                        <button type="button" onclick="document.getElementById('persons').stepUp()" class="plus"><i class="fas fa-chevron-up"></i></button>
                     </div>
                     <div>
                         <a href="#">Boka</a>
