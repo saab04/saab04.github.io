@@ -387,7 +387,7 @@ form h1{
     position: absolute;
     top: 2rem;
     font-size: 4rem;
-    color: var(--dark-main-color);
+    color: var(--white);
     
 }
 
@@ -426,7 +426,15 @@ form > div > div > input{
     height: 4rem;
     color: rgb(150, 148, 148);
     font-size: 1.8rem;
+    cursor: pointer;
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    padding: 1rem 0 1rem 30rem;
+    cursor: pointer;
+  }
 
 
 .check-info{

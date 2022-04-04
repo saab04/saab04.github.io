@@ -52,11 +52,12 @@
                     </div>
                     <div>
                         <label for="room-type">Typ av rum</label>
-                        <input type="text" list="room-list" name="room-type" id="room-type" value="Standard">
+                        <input type="text" list="room-list" name="room-type" id="room-type">
                         <datalist id="room-list">
-                            <option value="asd">
-                            <option value="2asdasd">
-                            <option value="3asdasd">
+                            <option value="Standardrum">
+                            <option value="Dubbelrum">
+                            <option value="Trebäddsrum">
+                            <option value="Familjesvit">
                         </datalist>
                     </div>
                     <div class="number-input">
@@ -98,5 +99,11 @@
             </div>
 
         </footer>
+        <script>
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementsByName("check-in")[0].setAttribute('min', today);
+            
+     
+        </script>
     </body>
 </html>
