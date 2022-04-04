@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Schlättahotellet</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4039f99621.js"; crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><h1><a href="../index.html">Schlättahotellet</a></h1>
+                    <li><a href="./boka.html">Boka</a></li>
+                    <li class="dropdown"><a href="#">Aktiviteter</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Bowling</a></li>
+                            <li><a href="#">Cykling</a></li>
+                            <li><a href="#">Bad</a></li>
+                            <li><a href="#">Paddel</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Resturang</a></li>
+                    <li><a href="#">Rum</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-rum">
+            
+        </main>
+        <footer>
+            <div class="logo">
+                <h1>Schlättahotellet</h1>
+            </div>
+            <div class="info">
+                <div>
+                    <p>Schlättahotellet</p>
+                    <p>Allégatan 49</p>
+                    <p>534 31 Vara</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-mobile-alt"></i>0512-300 00</p>
+                    <p><i class="far fa-envelope"></i><a href="#">info@schlättahotellet.se</a></p>
+                </div>
+                <div class="social-media">
+                    <ul>
+                        <li><a><i class="fab fa-instagram"></i></a></li>
+                        <li><a><i class="fab fa-facebook"></i></a></li>
+                        <li><a><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+ 
+                </div>
+
+            </div>
+
+        </footer>
+        <script>
+            var today = new Date().toISOString().split('T')[0];
+            document.getElementsByName("check-in")[0].setAttribute('min', today);
+            
+     
+        </script>
+    </body>
+</html>
