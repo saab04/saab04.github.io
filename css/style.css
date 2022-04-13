@@ -539,6 +539,59 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* resturang */
 
+.main-resturang{
+    display: flex;
+    flex-direction: column;
+}
+
+.rest-img{
+    width: 100%;
+    height: 60rem;
+    background: url(../bilder/restaurant-g341322d16_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 40%;
+}
+
+.rest-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100rem;
+}
+
+.rest-cards > .rest-card1,.rest-card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 35rem;
+}
+
+.rest-card1{
+    background: var(--dark-main-color);
+}
+
+.rest-card2{
+    background: var(--dark-main-color);
+}
+
+.rest-cards > div > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+
+
 
 
 
