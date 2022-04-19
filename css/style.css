@@ -188,7 +188,7 @@ header > nav > ul > li > a:hover{
    
 }
 
-.card1,.card2,.card3,.card4{
+.card1,.card2,.card3,.card4,.card5{
     position: relative;
     flex: 1 1 24%;
     display: flex;
@@ -220,6 +220,7 @@ header > nav > ul > li > a:hover{
     background-blend-mode: darken;
 }
 
+
 .card-btn{
     position: absolute;
     bottom: 3rem;
@@ -227,8 +228,8 @@ header > nav > ul > li > a:hover{
     width: 18rem;
     background: var(--main-color);
     border-radius: 1.5rem;
-
 }
+
 
 .card-btn > a{
     display: flex;
@@ -626,8 +627,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .meals > div:hover{
-    transition: all 0.4s ease;
-    transform: scale(1.2);
+    transition: all 0.5s ease;
+    transform: scale(1.1);
 }
 
 .breakfast{
@@ -652,6 +653,63 @@ input[type=number]::-webkit-outer-spin-button {
     text-decoration: none;
     color: var(--white);
 }
+
+/* Hamburger meny */
+
+#hamburger{
+    display: none;
+}
+
+nav label{
+    position: fixed;
+    padding: 1.1rem 1.3rem;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.hamburger-icons, 
+.hamburger-icons::before,
+.hamburger-icons::after{
+    position: absolute;
+    width: 1.4rem;
+    height: 0.3rem;
+    border: 1rem;
+    background: white;
+    transition: all 0.3s;
+}
+
+.hamburger-icons{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hamburger-icons::before{
+    content: "";
+    transform: translateY(-0.5rem);
+}
+
+.hamburger-icons::after{
+    content: "";
+    transform: translateY(0.5rem);
+}
+
+#hamburger:checked + label .hamburger-icons{
+    background: transparent;
+}
+
+#hamburger:checked + label .hamburger-icons::before{
+    transform: rotate(45deg);
+}
+
+#hamburger:checked + label .hamburger-icons::after{
+    transform: rotate(-45deg);
+}
+
+
+
 
 
 
