@@ -667,6 +667,7 @@ nav label{
     top: 1rem;
     cursor: pointer;
     z-index: 20;
+    display: none; 
 }
 
 .hamburger-icons, 
@@ -698,6 +699,7 @@ nav label{
 
 #hamburger:checked + label .hamburger-icons{
     background: transparent;
+    transition: none;
 }
 
 #hamburger:checked + label .hamburger-icons::before{
@@ -707,6 +709,84 @@ nav label{
 #hamburger:checked + label .hamburger-icons::after{
     transform: rotate(-45deg);
 }
+
+/* Hamburger Overlay */
+
+.hamburger-overlay{
+    z-index: 19;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 5rem;
+    font-size: 160%;
+    font-weight: bold;
+    visibility: hidden;
+    background: transparent;
+    clip-path: circle(1.8rem at calc(100% - 2.4rem) 1.7rem);
+    transition: all 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif; ;
+}
+
+.hamburger-overlay ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.hamburger-overlay ul > li > h1 a{
+    color: var(--color);
+}
+
+.hamburger-overlay ul a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 3.5rem;
+}
+
+
+.hamburger-overlay ul li:not(:first-child) a:hover{
+    background: var(--color);
+
+}
+
+#hamburger:checked ~ .hamburger-overlay{
+    visibility: visible;
+    background: black;
+    clip-path: circle(75%);
+}
+
+/* Adjustments for small screens */
+
+@media screen and (max-width: 900px){
+    nav label{
+        display: block;
+    }
+
+    header > nav > ul > li:not(:first-child){
+        display: none;
+    }
+
+    .card1,.card2,.card3,.card4,.card5{
+        flex: wrap;
+    }
+
+    .meals{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+
+
+}
+
+
+
 
 
 
