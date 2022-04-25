@@ -736,21 +736,42 @@ nav label{
 .hamburger-overlay ul{
     list-style-type: none;
     text-align: center;
+    justify-content: center;
+    width: 15rem;
 }
 
 .hamburger-overlay ul > li > h1 a{
     color: var(--color);
+    margin: 0 0 2rem;
+    font-size: 4rem;
 }
 
-.hamburger-overlay ul a{
+
+.hamburger-overlay > ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
     text-decoration: none;
-    color: white;
-    padding: 1.5rem 3.5rem;
+    color: var(--white);
+}
+
+.hamburger-overlay .dropdown-content{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.hamburger-overlay .dropdown-content > li > a{
+    padding: 0;
 }
 
 
 .hamburger-overlay ul li:not(:first-child) a:hover{
-    background: var(--color);
+    transition: all 0.5s ease;
+    background: var(--color)
 
 }
 
@@ -773,6 +794,7 @@ nav label{
 
     .card1,.card2,.card3,.card4,.card5{
         flex: wrap;
+        flex-basis: 50%;
     }
 
     .meals{
