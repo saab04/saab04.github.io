@@ -197,13 +197,10 @@ header > nav > ul > li > a:hover{
     text-align: center; 
     height: 35rem;
     margin: 0.5rem;
-    background: grey;
     color: var(--white);
     background: var(--dark-main-color);
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;;
-    
-
 }
 
 .card2{
@@ -219,6 +216,13 @@ header > nav > ul > li > a:hover{
     background-size: cover;
     background-blend-mode: darken;
 }
+
+.card5{
+    background: rgba(0, 0, 0, 0.3) url(../bilder/inner-space-g9cf736a7d_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}   
 
 
 .card-btn{
@@ -377,15 +381,14 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 35rem;
     width: 80rem;
+    padding: 5rem;
     background: var(--main-color);
     font-family: 'Roboto', sans-serif;;
     border-radius: 4rem;
 }
 
 form h1{
-    position: absolute;
     top: 2rem;
     font-size: 4rem;
     color: var(--white);
@@ -396,7 +399,7 @@ form h1{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin: 6rem 0;
+    margin: 6rem;
 
 }
 
@@ -435,7 +438,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     right: 0;
     padding: 1rem 0 1rem 30rem;
     cursor: pointer;
-  }
+}
 
 
 .check-info{
@@ -523,7 +526,7 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: center;
     align-items: center;
     width: 80%;
-    height: 100%;
+    height: 4rem;
     background: var(--dark-main-color);
     text-decoration: none;
     color:var(--white);
@@ -620,8 +623,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .meals > div{
-    width: 35rem;
-    height: 20rem;
+    flex: 1 1 30%;
+    margin: 1rem;
     background-position: center;
     background-size: cover;
 }
@@ -809,12 +812,39 @@ nav label{
     }
 
     .meals > div{
-        margin-bottom: 2.5rem;
+        flex-wrap: wrap;
+        min-width: 25rem;
+        min-height: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .main-boka{
+        min-height: 80rem;
+    }
+    
+    .check{
+        flex-direction: column;
+        margin: 6rem 0 3rem 0;
+    }
+
+    .check > div{
+        margin-bottom: 5rem;
+    }
+
+    .check-info{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .check-info > div{
+        flex: 1 1 40%;
+        margin-bottom: 5rem;
     }
 
     
-
-
+    
 }
 
 
