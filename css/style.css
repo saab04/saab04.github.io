@@ -793,13 +793,23 @@ nav label{
     }
 
     .card1,.card2,.card3,.card4,.card5{
-        flex: wrap;
-        flex-basis: 50%;
+        flex: 1 0 45%;
+        flex-wrap: wrap;
+        min-width: 30rem;
+    }
+
+    .main-resturang{
+        height: 230rem;
     }
 
     .meals{
         flex-wrap: wrap;
         justify-content: center;
+        
+    }
+
+    .meals > div{
+        margin-bottom: 2.5rem;
     }
 
     
