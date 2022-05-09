@@ -147,7 +147,7 @@ header > nav > ul > li > a:hover{
     justify-content: center;
     width: 100%;
     height: 60rem;
-    background: rgba(0, 0, 0, 0.3) url(../bilder/hotel-g2516a8452_640.jpg) no-repeat;
+    background: rgba(0, 0, 0, 0.3) url(../bilder/hotel-g2065a62bf_1920.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
@@ -158,13 +158,12 @@ header > nav > ul > li > a:hover{
     font-size: 7rem;
     color: var(--white);
     font-family: 'Quintessential', cursive;
-
 }
 
 .main-img > p{
     font-size: 2.5rem;
     color: var(--white);
-    font-family: 'Quintessential', cursive;;
+    font-family: 'Quintessential', cursive;
 }
 
 .cards{
@@ -230,7 +229,7 @@ header > nav > ul > li > a:hover{
     bottom: 3rem;
     height: 5rem;
     width: 18rem;
-    background: var(--main-color);
+    background: var(--color);
     border-radius: 1.5rem;
 }
 
@@ -242,14 +241,14 @@ header > nav > ul > li > a:hover{
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;;
-    color: var(--white);
+    color: var(--secondary-color);
     border-radius: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .card-btn > a:hover{
-    transition: all 0.3s ease;
     background: var(--white);
     color: var(--main-color);
     
@@ -383,9 +382,9 @@ form{
     align-items: center;
     width: 80rem;
     padding: 5rem;
-    background: var(--main-color);
+    background: var(--dark-main-color);
     font-family: 'Roboto', sans-serif;;
-    border-radius: 4rem;
+    border-radius: 2rem;
 }
 
 form h1{
@@ -420,6 +419,7 @@ form div > label{
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8rem;
+    color: var(--white);
 
     
 }
@@ -527,15 +527,15 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center;
     width: 80%;
     height: 4rem;
-    background: var(--dark-main-color);
+    background: var(--color);
     text-decoration: none;
     color:var(--white);
     border-radius: 2rem;
     font-size: 2rem;
+    transition: all 0.3s ease;
 }
 
-.check-info > div > a:hover{
-    transition: all 0.3s ease-in-out;
+.check-info > div > a:hover{ 
     background: var(--white);
     color: var(--dark-main-color);
 }
@@ -566,7 +566,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     height: 120rem;
     margin-top: 5rem;
-    
 }
 
 .rest-text{
@@ -587,7 +586,6 @@ input[type=number]::-webkit-outer-spin-button {
     height: 35rem;
     font-family: 'Roboto', sans-serif;;
     text-shadow: 2px 2px black;
-    
 }
 
 .rest-card1{
@@ -627,11 +625,11 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 1rem;
     background-position: center;
     background-size: cover;
+    transition: all 0.5s ease;
 }
 
 .meals > div:hover{
-    transition: all 0.5s ease;
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .breakfast{
@@ -666,21 +664,21 @@ input[type=number]::-webkit-outer-spin-button {
 nav label{
     position: fixed;
     padding: 1.1rem 1.3rem;
-    right: 1rem;
-    top: 1rem;
+    right: 1.5rem;
+    top: 2.5rem;
     cursor: pointer;
     z-index: 20;
-    display: none; 
+    display: none;
 }
 
 .hamburger-icons, 
 .hamburger-icons::before,
 .hamburger-icons::after{
     position: absolute;
-    width: 1.4rem;
+    width: 1.8rem;
     height: 0.3rem;
     border: 1rem;
-    background: white;
+    background: grey;
     transition: all 0.3s;
 }
 
@@ -841,6 +839,14 @@ nav label{
     .check-info > div{
         flex: 1 1 40%;
         margin-bottom: 5rem;
+    }
+
+    .main-img > h1{
+        font-size: 5.5rem;
+    }
+
+    .main-img > p{
+        font-size: 2.5rem;
     }
 
     
