@@ -65,14 +65,14 @@
                 <div class="check-info">
                     <div class="number-input">
                         <label for="rooms">Antal rum</label>
-                        <button type="button" onclick="document.getElementById('rooms').stepDown()" class="minus"><i class="fas fa-chevron-down"></i></button>
+                        <button type="button" onclick="document.getElementById('rooms').stepDown()" name="minus" class="minus"><i class="fas fa-chevron-down"></i></button>
                         <input type="number" name="rooms" id="rooms" min="1" value="1" max="5">
-                        <button type="button" onclick="document.getElementById('rooms').stepUp();" class="plus"><i class="fas fa-chevron-up"></i></button>
+                        <button type="button" onclick="document.getElementById('rooms').stepUp();" name="plus" class="plus"><i class="fas fa-chevron-up"></i></button>
 
                     </div>
                     <div>
                         <label for="room-type">Typ av rum</label>
-                        <input type="text" list="room-list" name="room-type" id="room-type">
+                        <input type="text" list="room-list" name="room-type" id="room-type" >
                         <datalist id="room-list">
                             <option value="Standardrum">
                             <option value="Dubbelrum">
@@ -82,16 +82,15 @@
                     </div>
                     <div class="number-input">
                         <label for="persons">Antal gäster</label>
-                        <button type="button" onclick="document.getElementById('persons').stepDown()" class="minus"><i class="fas fa-chevron-down"></i></button>
+                        <button type="button" onclick="document.getElementById('persons').stepDown()" name="minus" class="minus"><i class="fas fa-chevron-down"></i></button>
                         <input type="number" name="persons" id="persons" min="1" value="1">
-                        <button type="button" onclick="document.getElementById('persons').stepUp()" class="plus"><i class="fas fa-chevron-up"></i></button>
+                        <button type="button" onclick="document.getElementById('persons').stepUp()" name="plus" class="plus"><i class="fas fa-chevron-up"></i></button>
                     </div>
                     <div>
                         <a href="#">Boka</a>
                     </div>
                 </div>                
-            </form>
-            
+            </form>    
         </main>
         <footer>
             <div class="logo">
